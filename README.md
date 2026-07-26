@@ -1,14 +1,17 @@
 # JavaScript Algorithms and Data Structures
 
 > 🇺🇦 UKRAINE [IS BEING ATTACKED](https://war.ukraine.ua/) BY RUSSIAN ARMY. CIVILIANS ARE GETTING KILLED. RESIDENTIAL AREAS ARE GETTING BOMBED.
-> - Help Ukraine via [National Bank of Ukraine](https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi)
-> - Help Ukraine via [SaveLife](https://savelife.in.ua/en/donate-en/) fund
+> - Help Ukraine via:
+>   - [Serhiy Prytula Charity Foundation](https://prytulafoundation.org/en/)
+>   - [Come Back Alive Charity Foundation](https://savelife.in.ua/en/donate-en/)
+>   - [National Bank of Ukraine](https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi)
 > - More info on [war.ukraine.ua](https://war.ukraine.ua/) and [MFA of Ukraine](https://twitter.com/MFA_Ukraine)
 
 <hr/>
 
 [![CI](https://github.com/trekhleb/javascript-algorithms/workflows/CI/badge.svg)](https://github.com/trekhleb/javascript-algorithms/actions?query=workflow%3ACI+branch%3Amaster)
 [![codecov](https://codecov.io/gh/trekhleb/javascript-algorithms/branch/master/graph/badge.svg)](https://codecov.io/gh/trekhleb/javascript-algorithms)
+![repo size](https://img.shields.io/github/repo-size/trekhleb/javascript-algorithms.svg)
 
 This repository contains JavaScript based examples of many
 popular algorithms and data structures.
@@ -28,15 +31,14 @@ _Read this in other languages:_
 [_Português_](README.pt-BR.md),
 [_Русский_](README.ru-RU.md),
 [_Türkçe_](README.tr-TR.md),
-[_Italiana_](README.it-IT.md),
+[_Italiano_](README.it-IT.md),
 [_Bahasa Indonesia_](README.id-ID.md),
 [_Українська_](README.uk-UA.md),
 [_Arabic_](README.ar-AR.md),
 [_Tiếng Việt_](README.vi-VN.md),
-[_Deutsch_](README.de-DE.md)
-
-*☝ Note that this project is meant to be used for learning and researching purposes
-only, and it is **not** meant to be used for production.*
+[_Deutsch_](README.de-DE.md),
+[_Uzbek_](README.uz-UZ.md),
+[_עברית_](README.he-IL.md)
 
 ## Data Structures
 
@@ -45,12 +47,15 @@ be accessed and modified efficiently. More precisely, a data structure is a coll
 values, the relationships among them, and the functions or operations that can be applied to
 the data.
 
+Remember that each data has its own trade-offs. And you need to pay attention more to why you're choosing a certain data structure than to how to implement it.
+
 `B` - Beginner, `A` - Advanced
 
 * `B` [Linked List](src/data-structures/linked-list)
 * `B` [Doubly Linked List](src/data-structures/doubly-linked-list)
 * `B` [Queue](src/data-structures/queue)
 * `B` [Stack](src/data-structures/stack)
+* `B` [Deque](src/data-structures/deque) - double-ended queue
 * `B` [Hash Table](src/data-structures/hash-table)
 * `B` [Heap](src/data-structures/heap) - max and min heap versions
 * `B` [Priority Queue](src/data-structures/priority-queue)
@@ -133,6 +138,7 @@ a set of rules that precisely define a sequence of operations.
   * `B` [Shellsort](src/algorithms/sorting/shell-sort)
   * `B` [Counting Sort](src/algorithms/sorting/counting-sort)
   * `B` [Radix Sort](src/algorithms/sorting/radix-sort)
+  * `B` [Bucket Sort](src/algorithms/sorting/bucket-sort)
 * **Linked Lists**
   * `B` [Straight Traversal](src/algorithms/linked-list/traversal)
   * `B` [Reverse Traversal](src/algorithms/linked-list/reverse-traversal)
@@ -178,6 +184,7 @@ a set of rules that precisely define a sequence of operations.
   * `B` [Rain Terraces](src/algorithms/uncategorized/rain-terraces) - trapping rain water problem (dynamic programming and brute force versions)
   * `B` [Recursive Staircase](src/algorithms/uncategorized/recursive-staircase) - count the number of ways to reach to the top (4 solutions)
   * `B` [Best Time To Buy Sell Stocks](src/algorithms/uncategorized/best-time-to-buy-sell-stocks) - divide and conquer and one-pass examples
+  * `B` [Valid Parentheses](src/algorithms/stack/valid-parentheses) - check if a string has valid parentheses (using stack)
   * `A` [N-Queens Problem](src/algorithms/uncategorized/n-queens)
   * `A` [Knight's Tour](src/algorithms/uncategorized/knight-tour)
 
@@ -190,7 +197,7 @@ algorithm is an abstraction higher than a computer program.
 * **Brute Force** - look at all the possibilities and selects the best solution
   * `B` [Linear Search](src/algorithms/search/linear-search)
   * `B` [Rain Terraces](src/algorithms/uncategorized/rain-terraces) - trapping rain water problem
-  * `B` [Recursive Staircase](src/algorithms/uncategorized/recursive-staircase) - count the number of ways to reach to the top
+  * `B` [Recursive Staircase](src/algorithms/uncategorized/recursive-staircase) - count the number of ways to reach the top
   * `A` [Maximum Subarray](src/algorithms/sets/maximum-subarray)
   * `A` [Travelling Salesman Problem](src/algorithms/graph/travelling-salesman) - shortest possible route that visits each city and returns to the origin city
   * `A` [Discrete Fourier Transform](src/algorithms/math/fourier-transform) - decompose a function of time (a signal) into the frequencies that make it up
@@ -221,7 +228,7 @@ algorithm is an abstraction higher than a computer program.
   * `B` [Jump Game](src/algorithms/uncategorized/jump-game)
   * `B` [Unique Paths](src/algorithms/uncategorized/unique-paths)
   * `B` [Rain Terraces](src/algorithms/uncategorized/rain-terraces) - trapping rain water problem
-  * `B` [Recursive Staircase](src/algorithms/uncategorized/recursive-staircase) - count the number of ways to reach to the top
+  * `B` [Recursive Staircase](src/algorithms/uncategorized/recursive-staircase) - count the number of ways to reach the top
   * `B` [Seam Carving](src/algorithms/image-processing/seam-carving) - content-aware image resizing algorithm
   * `A` [Levenshtein Distance](src/algorithms/string/levenshtein-distance) - minimum edit distance between two sequences
   * `A` [Longest Common Subsequence](src/algorithms/sets/longest-common-subsequence) (LCS)
@@ -234,9 +241,9 @@ algorithm is an abstraction higher than a computer program.
   * `A` [Bellman-Ford Algorithm](src/algorithms/graph/bellman-ford) - finding the shortest path to all graph vertices
   * `A` [Floyd-Warshall Algorithm](src/algorithms/graph/floyd-warshall) - find the shortest paths between all pairs of vertices
   * `A` [Regular Expression Matching](src/algorithms/string/regular-expression-matching)
-* **Backtracking** - similarly to brute force, try to generate all possible solutions, but each time you generate next solution you test
-if it satisfies all conditions, and only then continue generating subsequent solutions. Otherwise, backtrack, and go on a
-different path of finding a solution. Normally the DFS traversal of state-space is being used.
+* **Backtracking** - similarly to brute force, try to generate all possible solutions, but each time you generate the next solution, you test
+if it satisfies all conditions and only then continue generating subsequent solutions. Otherwise, backtrack and go on a
+different path to finding a solution. Normally the DFS traversal of state-space is being used.
   * `B` [Jump Game](src/algorithms/uncategorized/jump-game)
   * `B` [Unique Paths](src/algorithms/uncategorized/unique-paths)
   * `B` [Power Set](src/algorithms/sets/power-set) - all subsets of a set
@@ -246,8 +253,8 @@ different path of finding a solution. Normally the DFS traversal of state-space 
   * `A` [Combination Sum](src/algorithms/sets/combination-sum) - find all combinations that form specific sum
 * **Branch & Bound** - remember the lowest-cost solution found at each stage of the backtracking
 search, and use the cost of the lowest-cost solution found so far as a lower bound on the cost of
-a least-cost solution to the problem, in order to discard partial solutions with costs larger than the
-lowest-cost solution found so far. Normally BFS traversal in combination with DFS traversal of state-space
+a least-cost solution to the problem in order to discard partial solutions with costs larger than the
+lowest-cost solution found so far. Normally, BFS traversal in combination with DFS traversal of state-space
 tree is being used.
 
 ## How to use this repository
@@ -287,14 +294,14 @@ rm -rf ./node_modules
 npm i
 ```
 
-Also make sure that you're using a correct Node version (`>=14.16.0`). If you're using [nvm](https://github.com/nvm-sh/nvm) for Node version management you may run `nvm use` from the root folder of the project and the correct version will be picked up.
+Also, make sure that you're using the correct Node version (`>=16`). If you're using [nvm](https://github.com/nvm-sh/nvm) for Node version management you may run `nvm use` from the root folder of the project and the correct version will be picked up.
 
 **Playground**
 
 You may play with data-structures and algorithms in `./src/playground/playground.js` file and write
 tests for it in `./src/playground/__test__/playground.test.js`.
 
-Then just simply run the following command to test if your playground code works as expected:
+Then just, simply run the following command to test if your playground code works as expected:
 
 ```
 npm test -- 'playground'
@@ -310,7 +317,7 @@ npm test -- 'playground'
 ### Big O Notation
 
 *Big O notation* is used to classify algorithms according to how their running time or space requirements grow as the input size grows.
-On the chart below you may find most common orders of growth of algorithms specified in Big O notation.
+On the chart below, you may find the most common orders of growth of algorithms specified in Big O notation.
 
 ![Big O graphs](./assets/big-o-graph.png)
 
@@ -357,14 +364,17 @@ Below is the list of some of the most used Big O notations and their performance
 | **Counting sort**     | n + r           | n + r               | n + r               | n + r     | Yes       | r - biggest number in array |
 | **Radix sort**        | n * k           | n * k               | n * k               | n + k     | Yes       | k - length of longest key |
 
-## Project Backers
+<!-- ## Project Backers
 
 > You may support this project via ❤️️ [GitHub](https://github.com/sponsors/trekhleb) or ❤️️ [Patreon](https://www.patreon.com/trekhleb).
 
-[Folks who are backing this project](https://github.com/trekhleb/javascript-algorithms/blob/master/BACKERS.md) `∑ = 0`
-
-> ℹ️ A few more [projects](https://trekhleb.dev/projects/) and [articles](https://trekhleb.dev/blog/) about JavaScript and algorithms on [trekhleb.dev](https://trekhleb.dev)
+[Folks who are backing this project](https://github.com/trekhleb/javascript-algorithms/blob/master/BACKERS.md) `∑ = 1` -->
 
 ## Author
 
-- [@trekhleb](https://trekhleb.dev)
+[@trekhleb](https://trekhleb.dev)
+
+A few more [projects](https://trekhleb.dev/projects/) and [articles](https://trekhleb.dev/blog/) about JavaScript and algorithms on [trekhleb.dev](https://trekhleb.dev):
+
+- 🧠 [yesbrainer.ai](https://yesbrainer.ai/) – council of AI models for the decisions that aren’t no-brainers (BYOK, private, no account)
+- ✍🏻 [okso.app](https://okso.app/) – drawing app to express, grasp, and organize your thoughts and ideas
